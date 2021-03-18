@@ -61,22 +61,20 @@ The Simulink model also computes the analytical solution for some of the loading
 ### Tension
 If you apply a force $`F`$ along the axis of the beam, you should get a steady state deformation of
 
-```math
-\Delta L = \frac{F \cdot L}{A \cdot E}
-```
+![](Misc/tension.png)
+
 where $`A`$ is the cross-sectional area of the beam, $`E`$ is the Youngs Modulus, $`L`$ is the length of the beam. 
 ### Torsion
 If you load the beam in torsion with torque $`T`$ you should get a steady state angle of twist of 
 
-```math
-\theta = \frac{T \cdot L}{G \cdot I_P}
-```
+![](Misc/torsion.png)
+
 Where $`G`$ is the shear modulus, $`Ip`$ is the polar moment of inertia 
 ### Bending
 For this one I chose to look at the frequency of the response instead of the steady state behavior. If you apply a pulse to the end of the beam in a direction perpendicular to the axis of the beam, you should get a response that oscillates at the first natural frequency of the beam 
-```math
-\omega_1 = 1.87510^2 \sqrt{\frac{E \cdot I }{\rho \cdot A}}
-```
+
+![](Misc/bending.png)
+
 Where $`I`$ is the moment of inertia, $`\rho`$ is density, $`A`$ is cross sectional area, $`E`$ is Youngs Modulus.  
 
 ## Generating a ROM using the PDE Toolbox
