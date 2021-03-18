@@ -21,7 +21,7 @@ All of the files are organized in a [MATLAB Project](https://www.mathworks.com/h
     - Poisson ratio: 0.33
     - 2 boundary nodes (one at each face of the cylinder)
 2. Enter the generated ROM data into the Reduced Order Flexible Solid block in the `compareFlexibleCylinders` model
-3. Run the simulation and compare the simulation result for your ROM to the analytical solution provided. The beam can be tested under the loading conditions described here (TODO: LINK TO BLOG POST).
+3. Run the simulation and compare the simulation result for your ROM to the analytical solution provided. The beam can be tested under the loading conditions described below.
 
 ## Simulink model
 When you open the MATLAB Project, the `compareFlexibleCylinders` model should open automatically. If it doesn't, you can use the project shortcut to open it:
