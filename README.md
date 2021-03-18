@@ -69,7 +69,7 @@ If you load the beam in torsion with torque `T` you should get a steady state an
 
 ![](Misc/torsion.png)
 
-Where $`G`$ is the shear modulus, `Ip` is the polar moment of inertia 
+Where `G` is the shear modulus, `Ip` is the polar moment of inertia 
 ### Bending
 For this one I chose to look at the frequency of the response instead of the steady state behavior. If you apply a pulse to the end of the beam in a direction perpendicular to the axis of the beam, you should get a response that oscillates at the first natural frequency of the beam 
 
