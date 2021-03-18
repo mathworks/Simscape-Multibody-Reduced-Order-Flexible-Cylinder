@@ -1,0 +1,5 @@
+#ignore all slxc files
+*.slxc
+
+#ignore slprj folder
+slprj/
