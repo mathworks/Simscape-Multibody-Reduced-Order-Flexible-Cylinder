@@ -10,6 +10,8 @@ A reduced-order model for the cylinder is provided, but the project is set up so
 
 See this [blog post](https://blogs.mathworks.com/simulink/?p=10056) for a high level overview of the Reduced Order Flexible Solid block.
 
+[![View Simscape Multibody Reduced Order Flexible Cylinder on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/88992-simscape-multibody-reduced-order-flexible-cylinder)
+
 # Getting Started
 All of the files are organized in a [MATLAB Project](https://www.mathworks.com/help/releases/R2020b/matlab/projects.html?s_tid=CRUX_lftnav). You can simply open the project to get started. The intended way to use the files in the project is:
 
