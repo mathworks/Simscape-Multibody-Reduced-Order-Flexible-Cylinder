@@ -1,5 +1,5 @@
 # Reduced-Order Flexible Cylinder in Simscape Multibody
-Copyright 2021 The MathWorks, Inc.
+Copyright 2021 - 2022 The MathWorks, Inc.
 
 This project will get you started with the [Reduced Order Flexible Solid](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ref/reducedorderflexiblesolid.html) block in [Simscape Multibody](https://www.mathworks.com/products/simmechanics.html)™. The project contains:
 - A reduced-order model for a cylinder
