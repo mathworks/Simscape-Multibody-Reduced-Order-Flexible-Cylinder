@@ -117,4 +117,4 @@ If none of the above steps resolve the issue, then you can do a direct compariso
 As long as your interface frames matrix matches cyl.P, you should be able to do a direct comparison of the matrices. 
 
 ## References
-[Craig-Bampton FEA substructuring method](https://hal.archives-ouvertes.fr/hal-01537654/file/RCMB.pdf)
+[Craig-Bampton FEA substructuring method](https://hal.science/hal-01537654/file/RCMB.pdf)
