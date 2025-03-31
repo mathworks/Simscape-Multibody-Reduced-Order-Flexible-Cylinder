@@ -1,9 +1,9 @@
 # Reduced-Order Flexible Cylinder in Simscape Multibody
-Copyright 2021 - 2022 The MathWorks, Inc.
+Copyright 2021 - 2025 The MathWorks, Inc.
 
-This project will get you started with the [Reduced Order Flexible Solid](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ref/reducedorderflexiblesolid.html) block in [Simscape Multibody](https://www.mathworks.com/products/simscape-multibody.html)™. The project contains:
+This project will get you started with the [Reduced Order Flexible Solid](https://www.mathworks.com/help/physmod/sm/ref/reducedorderflexiblesolid.html) block in [Simscape Multibody](https://www.mathworks.com/products/simscape-multibody.html)™. The project contains:
 - A reduced-order model for a cylinder
-- A Simulink® model that tests the behavior of the cylinder under certain loading conditions. The model also compares the reduced-order model response to the [Flexible Cylindrical Beam](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ref/flexiblecylindricalbeam.html) and the analytical solution for each loading condition.
+- A Simulink® model that tests the behavior of the cylinder under certain loading conditions. The model also compares the reduced-order model response to the [Flexible Cylindrical Beam](https://www.mathworks.com/help/physmod/sm/ref/flexiblecylindricalbeam.html) and the analytical solution for each loading condition.
 - A script that shows you how to generate a reduced-order model using the [Partial Differential Equation Toolbox](https://www.mathworks.com/products/pde.html)™
 
 A reduced-order model for the cylinder is provided, but the project is set up so you can substitute in your own reduced-order model generated from your finite element analysis (FEA) software. Using this simple geometry will help you see how configuration settings in your FEA tool translate into Simscape Multibody™.
@@ -13,7 +13,7 @@ See this [blog post](https://blogs.mathworks.com/simulink/?p=10056) for a high l
 [![View Simscape Multibody Reduced Order Flexible Cylinder on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/88992-simscape-multibody-reduced-order-flexible-cylinder)
 
 # Getting Started
-All of the files are organized in a [MATLAB Project](https://www.mathworks.com/help/releases/R2020b/matlab/projects.html?s_tid=CRUX_lftnav). You can simply open the project to get started. The intended way to use the files in the project is:
+All of the files are organized in a [MATLAB Project](https://www.mathworks.com/help/matlab/projects.html?s_tid=CRUX_lftnav). You can simply open the project to get started. The intended way to use the files in the project is:
 
 1. In your FEA software of choice, generate a reduced-order model (ROM) for a cylindrical beam with these properties:
     - Radius: r = 0.05 m
@@ -36,7 +36,7 @@ The model will look something like this:
 
 Once you have generated the ROM for a cylinder with the properties mentioned above, you can use the `compareFlexibleCylinders` model to test the ROM under different loading conditions. 
 
-In the model I use the [Flexible Cylindrical Beam](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ref/flexiblecylindricalbeam.html?s_tid=doc_ta) as a baseline to compare the ROM response. 
+In the model I use the [Flexible Cylindrical Beam](https://www.mathworks.com/help/physmod/sm/ref/flexiblecylindricalbeam.html?s_tid=doc_ta) as a baseline to compare the ROM response. 
 
 The Reduced Order Flexible Solid block in the model is already populated with ROM data for a cylinder:
 
@@ -49,11 +49,11 @@ You can replace that data with the cylinder ROM data you have generated from you
 All of the loading will happen in the coordinate frame shown in the image above. For instance, a force along the x-axis would put the beam in tension, a torque about the x-axis would put the beam in torsion, and a force applied along the z-axis would put the beam in bending.
 
 ### Loading conditions
-This model uses [Variant Systems](https://www.mathworks.com/help/releases/R2020b/simulink/variant-systems.html?s_tid=CRUX_lftnav) to switch between the different loading conditions.
+This model uses [Variant Systems](https://www.mathworks.com/help/simulink/variant-systems.html?s_tid=CRUX_lftnav) to switch between the different loading conditions.
 
 All of the variants are controlled by a variable in the Base Workspace named `ValidationTest`. You use the links available inside the model to modify `ValidationTest`.
 
-After you run a simulation, the [Simulation Data Inspector](https://www.mathworks.com/help/releases/R2020b/simulink/slref/simulationdatainspector.html) will open automatically and display the results. You can also choose to plot the results in MATLAB®:
+After you run a simulation, the [Simulation Data Inspector](https://www.mathworks.com/help/simulink/slref/simulationdatainspector.html) will open automatically and display the results. You can also choose to plot the results in MATLAB®:
 
 ![](Misc/MATLAB_results.png)
 
@@ -82,11 +82,11 @@ Where `I` is the moment of inertia, `p` is density, `A` is cross sectional area,
 ## Generating a ROM using the PDE Toolbox
 If you have a license for the [PDE Toolbox](https://www.mathworks.com/products/pde.html), you can use the toolbox to generate a reduced-order model for your CAD component. Open the `generate_cylinder_ROM` live script to learn how to do that. 
 
-You can also refer to the [Flexible Dipper](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ug/model-excavator-dipper-arm.html
+You can also refer to the [Flexible Dipper](https://www.mathworks.com/help/physmod/sm/ug/model-excavator-dipper-arm.html
 ) example in the documentation.
 
 ## Troubleshooting
-If you are seeing incorrect results, first make sure your ROM meets the [reduced-order model requirements](https://www.mathworks.com/help/releases/R2020b/physmod/sm/ref/reducedorderflexiblesolid.html#mw_d65e4979-2dd1-42cd-a57e-428f4e3463bd).
+If you are seeing incorrect results, first make sure your ROM meets the [reduced-order model requirements](https://www.mathworks.com/help/physmod/sm/ref/reducedorderflexiblesolid.html#mw_d65e4979-2dd1-42cd-a57e-428f4e3463bd).
 
 The following sections walk through a few other things you can check.
 
